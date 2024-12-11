@@ -1,7 +1,17 @@
+/* .body{
+    background-image:url(images/bgwhite.jpg);
+} */
+ .adminname{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left:5px ;
+ }
 .nav{
     background-color: black;
     height: 70px;
-    justify-content: right;
+    justify-content: left;
     
 }
 .nav ul li{
@@ -12,7 +22,7 @@ margin-top: 20px;
 .nav ul li a{
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 15px;
 
 }
 .nav ul li a:hover{
@@ -25,10 +35,125 @@ margin-top: 20px;
 .homebtns{
     width: 400px;
     height: 250px;
-    background-color:transparent;
     border-style:hidden;
     border-radius: 20px; 
     padding: 10px;  
     margin: 10%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.266);
+}
+.managebtns{
+    width: 400px;
+    height: 250px;
+    border-style:hidden;
+    border-radius: 20px; 
+    padding: 10px;  
+    margin: 10%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.266);
+}
+.manageicons{
+    font-size: 100px;
+    color: white;
+}
+.managebtntxt{
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.managebtns:hover{
+    transition: 1s;
+    width: 500px;
+}
+.listChangeButton{
+   background-color: rgb(90, 191, 90);
+   color: white;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 5px;
+   border-style: hidden;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.282);
+   font-weight: 600;
+
+}
+.listChangeButton:hover{
+    transition: 1s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#type{
+    padding: 10px;
+    margin: 10px;
+    border-style: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.282);
+    border-radius: 10px;
+    background-color: rgb(104, 172, 189);
+}
+
+.itemsHead{
+    width: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius:20px ;
+    padding: 10px;
+ 
+}
+.boxForm{
+    background-color: rgba(10, 8, 4, 0.828);
+    max-height: fit-content;
+    padding: 10px;
+}
+.txtInput{
+    width: 185px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.tableBox{
+    height: 400px;
+    background-color: rgba(10, 10, 10, 0.458);
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.tableRow{
+    width: 200px;
+    text-align: center;
+    background-color: rgba(240, 233, 233, 0.723);
+    color: rgb(11, 11, 11);
+    border-radius:7px ;
+    padding: 5px;
+    border-color: black;
+    
+}
+.icon{
+    margin: 5px;
+}
+#about{
+    max-height: fit-content;
+    background-color: rgb(26, 26, 26);
+    color: rgba(255, 255, 255, 0.525);
+    padding: 20px;
+}
+#about:hover{
+    transition: 1s;
+    color: white;
+    padding: 20px;
+}
+.foottitles{
+    font-weight: bolder;
+    margin: 15px;
+}
+.title{
+    text-align: center;
+    background-color: rgb(249, 248, 248);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+label{
+    color: white;
 }

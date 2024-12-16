@@ -15,12 +15,13 @@
     <div id="root">
 
     </div>
-    <!-- <div id="login">
-        <input type="text" placeholder="Name" id="userName">
-        <input type="text" placeholder="NIC Number" id="nicNumber">
-        <input type="password" placeholder="Password/Key" id="passwordKey">
-        <button id="login" onclick="login()">Login</button>
-    </div> -->
+    <!-- <div class="boxForm">
+        <label for="userName"><h2>Admin Login</h2></label>
+        <input type="text" placeholder="Name" id="userName" class="txtInput"><br>
+                <input type="text" placeholder="ID Number" id="idNumber"class="txtInput"><br>
+                <input type="password" placeholder="Password/Key" id="passwordKey"class="txtInput"><br>
+                <button id="login" onclick="login()" class="listChangeButton">Login</button><br>
+                </div> -->
     <!-- ============================================= -->
     <header>
         <div class="nav">
@@ -61,19 +62,8 @@
             <div class="col"><a href="javascript:beveragesMenu()"><img src="images/beverages.jpg" alt=""class="homebtns"></a></div>
         </div>
     </div> -->
-    <!-- =============================================manage customer====================================================== -->
-    <!-- <div class="text-center">
-        <div class="row">
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(237, 176, 63);"><h3 class="managebtntxt">Add Customer</h3><i class="bi bi-person-fill-add manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(227, 126, 49);"><h3 class="managebtntxt">View Customers</h3><i class="bi bi-person-lines-fill manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(238, 229, 55);"><h3 class="managebtntxt">Search Customer</h3><i class="bi bi-search manageicons"></i></button></div>
-        </div>
-        <div class="row">
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(112, 209, 67);"><h3 class="managebtntxt">Update Customer</h3><i class="bi bi-pencil-square manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(180, 143, 222);"><h3 class="managebtntxt">Delete Customer</h3><i class="bi bi-person-dash-fill manageicons"></i></button></div>
-        </div>
-    </div> -->
-    <!-- ================================manage items=========================================================== -->
+    
+    <!-- ================================manage =========================================================== -->
     <!-- <div class="text-center">
         <div class="row">
             <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(237, 176, 63);"><h3 class="managebtntxt">Add Item</h3><i class="bi bi-plus-circle manageicons"></i></button></div>
@@ -85,24 +75,14 @@
             <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(180, 143, 222);"><h3 class="managebtntxt">Delete Item</h3><i class="bi bi-trash3-fill manageicons"></i></button></div>
         </div>
     </div> -->
-    <!-- ==============================================manage order========================================================== -->
-    <!-- <div class="text-center">
-        <div class="row">
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(237, 176, 63);"><h3 class="managebtntxt">Add Order</h3><i class="bi bi-plus-circle manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(227, 126, 49);"><h3 class="managebtntxt">View Order</h3><i class="bi bi-list-ul manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(238, 229, 55);"><h3 class="managebtntxt">Search Order</h3><i class="bi bi-search manageicons"></i></button></div>
-        </div>
-        <div class="row">
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(112, 209, 67);"><h3 class="managebtntxt">Update Order</h3><i class="bi bi-pencil-square manageicons"></i></button></div>
-            <div class="col"><button onclick="addCustomer()" class="managebtns" style="background-color: rgb(180, 143, 222);"><h3 class="managebtntxt">Delete Order</h3><i class="bi bi-trash3-fill manageicons"></i></button></div>
-        </div>
-    </div> -->
+    
     <!-- ===================================add item==========================================  -->
-
-    <!-- <div>
+<!-- 
+    <div>
         <h2 class="title">Add Item</h2>
         </div>
                 <div class="boxForm text-center">
+                    <label for="type">Select Type:</label><br>
                     <select name="Type" id="type">
                         <option value="burger">Burger</option>
                         <option value="submarine">Submarine</option>
@@ -110,11 +90,15 @@
                         <option value="pasta">Pasta</option>
                         <option value="chicken">Chicken</option>
                         <option value="beverages">Beverages</option>
-                    </select>
-                    <input type="text" id="item_code"  class="txtInput">
-                    <input type="text" id="item_name" placeholder="Item Name" class="txtInput">
-                    <input type="number" id="item_price" placeholder="Price" class="txtInput">
-                    <input type="number" id="item_discount" placeholder="Discount" class="txtInput">
+                    </select><br>
+                    <label for="item_code">Item Code:</label><br>
+                    <h4 id="item_code" class="label"></h4><br>
+                    <label for="item_name">Item Name:</label><br>
+                    <input type="text" id="item_name" placeholder="Item Name" class="txtInput"><br>
+                    <label for="item_price">Price:</label><br>
+                    <input type="number" id="item_price" placeholder="Price" class="txtInput"><br>
+                    <label for="item_discount">Discount:</label><br>
+                    <input type="number" id="item_discount" placeholder="Discount" class="txtInput"><br>
                     <button onclick="addItembtn()" class="listChangeButton" id="btnAddItem">Add New Item </button>
                 </div>
                 
@@ -132,10 +116,9 @@
     
         </table>
         </div> -->
-    <!-- ==================================add customer================================================ -->
-
+    
 <!-- ===========================================view items================================================================ -->
-<div>
+<!-- <div>
     <h2 class="title">Burgers</h2>
 </div>
 <div class="tableBox">
@@ -151,9 +134,205 @@
     <table id="burgersList" style="width: 100%;">
 
     </table>
-</div> 
+</div>  -->
+<!-- =========================================add customer======================================================== -->
+<!-- <div>
+    <h2 class="title">Add Customer</h2>
+</div>
+<div class="boxForm">
+    <label for="customerName">Customer Name:</label><br>
+    <input type="text" placeholder="Name" id="customerName" class="txtInput"><br>
+    <label for="customerPhonenumber">Phone Number:</label><br>
+    <input type="text" placeholder="Phone Number" id="customerPhonenumber" class="txtInput"><br>
+    <label for="customerAddress">Address:</label><br>
+    <input type="text" placeholder="Address" id="customerAddress" class="txtInput"><br>
+    <button class="listChangeButton" onclick="addCustomerbtn()">Add Customer</button>
+</div>
+<div class="tableBox">
+    <table style="width: 100%;">
+        <tr>
+            <td  class="itemsHead">Customer Name</td>
+            <td  class="itemsHead">Phone Number</td>
+            <td  class="itemsHead">Address</td>
+        </tr>
+    </table>
+    <table id="customerList"style="width: 100%;">
 
-<!-- ==========================================footer=================================================== -->
+    </table>
+    </div> -->
+    <!-- ====================================================add order===================================================== -->
+<!-- <div>
+    <h2 class="title">Add Order</h2>
+</div>
+<div class="boxForm">
+    <label for="orderId">Order ID:</label><br>
+    <h4 id="orderId" class="label"></h4><br>
+    <label for="customerName">Customer Name:</label><br>
+    <input type="text" placeholder="Name" id="customerName" class="txtInput"><br>
+    <label for="customerId">Customer ID:</label><br>
+    <input type="text" placeholder="Phone Number" id="customerId" class="txtInput"><br>
+    <label for="item">Item:</label><br>
+    <input type="text" placeholder="Item Name" id="item" class="txtInput"><br>
+    <label for="quantity">Quantity:</label><br>
+    <input type="text" placeholder="Quantity" id="quantity" class="txtInput"><br>
+    <label for="amount">Amount:</label><br>
+    <h4 id="amount" class="label"></h4><br>
+    <label for="discount">Discount:</label><br>
+    <h4 id="discount" class="label"></h4><br>
+    <h2 class="label">Total:</h2><br>
+    <h4 class="label" id="total"></h4><br>
+    <button class="listChangeButton" onclick="addOrderbtn()">Add Order</button>
+</div>
+<div class="tableBox">
+    <table style="width: 100%;">
+        <tr>
+            <td  class="itemsHead">Order ID</td>
+            <td  class="itemsHead">CustomerID</td>
+            <td  class="itemsHead">Item</td>
+            <td  class="itemsHead">Quantity</td>
+            <td  class="itemsHead">Amount</td>
+        </tr>
+    </table>
+    <table id="orderList"style="width: 100%;">
+
+    </table>
+    </div> -->
+    <!-- =======================search customer======================= -->
+     <!-- <div>
+        <h2 class="title">Search Customer</h2>
+     </div>
+     <div class="boxForm">
+        <label for="enter_customer_id">Enter Customer Phone Number:</label>
+        <input type="text"  id="enter_customer_id" class="txtInput" placeholder="Phone Number">
+        <button class="listChangeButton" onclick="searchCustomer()">Search <i class="bi bi-search"></i></button>
+     </div>
+    <div class="tableBox">
+        <table style="width: 100%;">
+            <tr>
+                <td  class="itemsHead">Customer Name</td>
+                <td  class="itemsHead">Phone Number</td>
+                <td  class="itemsHead">Address</td>
+            </tr>
+        </table>
+        <table id="searchedCustomerList"style="width: 100%;">
+    
+        </table>
+        <div>
+           <h3 class="title">Orders By </h3>
+           <div>
+            <div class="cardBox">
+            <table id="ordersBy">
+            
+                <tr>
+                    <td>
+                    <div class="card">
+                       <div class="card-body">
+                            
+                       </div>
+                    </div>
+                    </td>
+                </tr>
+            
+            </table>
+           </div>
+        </div>
+        </div>
+        </div> -->
+        <!-- ===================search item=============================== -->
+       
+        <!-- <div>
+       <div>
+            <h2 class="title">Search Item</h2>
+         </div>
+         <div class="boxForm">
+            <label for="enter_item_idname">Enter Item Code or Name:</label>
+            <input type="text"  id="enter_item_idname" class="txtInput" placeholder=" Item Code/Name">
+            <button class="listChangeButton" onclick="searchItembtn('all')">Search <i class="bi bi-search"></i></button>
+        </div>
+    <div class="filterBox col">
+        <h5 class="filterBy">Filter By :</h5>
+<select name="filterBy" id="filterBy">
+    <option value="ByCode">By Code</option>
+    <option value="ByAscendingPrice">Price : Lowest to Highest</option>
+    <option value="ByDescendingPrice">Price : Highest to Lowest</option>
+</select>
+    </div>
+
+        <div class="tableBox">
+            <table style="width: 100%;">
+                <tr>
+               <td class="itemsHead">Type</td>
+               <td class="itemsHead">Item Code</td>
+               <td class="itemsHead">Item Name</td>
+               <td class="itemsHead">Price (LKR)</td>
+               <td class="itemsHead">Discount</td>
+                </tr>
+            </table>
+            <table id="searchedItemList"style="width: 100%;">
+        
+            </table>
+            </div>
+             -->
+            <!-- ==============================delete customer=========================== -->
+             <!-- <div class="boxForm" style="padding:10px;text-align: center;">
+                <label for="enter_customer_id" style="margin: 5px;">Enter Customer ID :</label>
+                <input type="text" id="enter_customer_id" class="txtInput" placeholder="Phone Number">
+                <button class="listChangeButton" onclick="searchCustomerbtn()"><i class="bi bi-search"></i></button>
+             </div>
+             <div class="tableBox">
+                <table style="width: 100%;">
+                    <tr>
+                        <td  class="itemsHead">Customer Name</td>
+                        <td  class="itemsHead">Phone Number</td>
+                    </tr>
+                </table>
+                <table id="searchedCustomerList"style="width: 100%;">
+            
+                </table>
+                 <div>
+           <h3 class="title">Orders By </h3>
+           <div>
+            <table id="ordersBy">
+
+            </table>
+           </div>
+        </div>
+            </div>
+            <div class="text-center">
+                <button class="deletebtn" onclick="deleteCustomerbtn()" style="background-color: rgb(255, 40, 7);">Delete Customer</button>
+                <button class="deletebtn" onclick="deleteCustomerAndOrdersbtn()">Delete Customer and Orders</button>
+            </div> -->
+            <!-- ==============================update customer============================================== -->
+     
+        <!-- <div class="boxForm" style="padding:10px;text-align: center;">
+            <label for="enter_customer_id" style="margin: 5px;">Enter Customer ID :</label>
+            <input type="text" id="enter_customer_id" class="txtInput" placeholder="Phone Number">
+            <button class="listChangeButton" onclick="searchCustomerUpdatebtn()"><i class="bi bi-search"></i></button>
+         </div> 
+         <div class="tableBox" style="height: 200px;">
+            <table style="width: 100%;">
+                <tr>
+                    <td  class="itemsHead">Customer Name</td>
+                    <td  class="itemsHead">Phone Number</td>
+                </tr>
+            </table>
+            <table id="searchedCustomerList"style="width: 100%;">
+        
+            </table>
+        </div>
+     <div class="text-center">
+        <button class="listChangeButton" onclick="updatCustomerbtn()">Update</button>
+     </div>
+     <tr>
+        <td  class="tableRow"><input type="text" id="newCustomerName" class="txtInput"></td>
+        <td  class="tableRow"><input type="text"  id="newCustomerID" class="txtInput"></td>
+        </tr> -->
+        <!-- ===============================individual search========================== -->
+         <!-- <div class="boxForm" style="padding: 5px;width: fit-content;">
+              <input type="text" class="txtInput" id="enter_item_idname" placeholder="Search">
+              <button class="listChangeButton" onclick="searchItembtn()"><i class="bi bi-search"></i></button>
+         </div> -->
+    <!-- ==========================================footer=================================================== -->
     <!-- <footer id="about" class="text-center">
         <div class="row">
             <div class="col">
@@ -162,9 +341,7 @@
             </div>
             <div class="col">
                 <h5 class="foottitles">About</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, obcaecati odio. Asperiores magni,
-                    nobis, laudantium laborum error nihil blanditiis ea doloremque soluta architecto laboriosam sunt
-                    neque corrupti earum nesciunt nam.</p>
+                <p>Welcome to the MOS Burgers Admin Dashboard – your central hub for managing products, orders, and customer data. Streamline operations, monitor performance, and ensure every customer enjoys the quality and service that MOS Burgers is known for.</p>
             </div>
             <div class="col">
                 <h5 class="foottitles">Contact</h5>
@@ -177,7 +354,8 @@
             </div>
         </div>
     </footer> -->
-    <script src="script.js"></script>
+    <script src="script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

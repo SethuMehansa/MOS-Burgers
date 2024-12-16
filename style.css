@@ -1,6 +1,6 @@
-/* .body{
+.body{
     background-image:url(images/bgwhite.jpg);
-} */
+}
  .adminname{
     background-color: white;
     color: black;
@@ -77,10 +77,11 @@ margin-top: 20px;
 }
 .listChangeButton:hover{
     transition: 1s;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 #type{
+    width: 200px;
     padding: 10px;
     margin: 10px;
     border-style: hidden;
@@ -99,14 +100,30 @@ margin-top: 20px;
  
 }
 .boxForm{
-    background-color: rgba(10, 8, 4, 0.828);
+    background-color: rgba(10, 8, 4, 0.872);
     max-height: fit-content;
-    padding: 10px;
+    padding: 50px;
+    max-width: 50%;
+    margin-left:25% ;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.569);
+}
+.filterBox{
+    background-color: rgba(252, 251, 248, 0.969);
+    max-height: fit-content;
+    padding: 5px;
+    max-width: fit-content;
+    margin-left:25% ;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.569);
 }
 .txtInput{
-    width: 185px;
+    margin: 5px;
+    width: 300px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 15px;
     border-style: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
@@ -122,15 +139,23 @@ margin-top: 20px;
 .tableRow{
     width: 200px;
     text-align: center;
-    background-color: rgba(240, 233, 233, 0.723);
+    background-color: rgba(240, 233, 233, 0.901);
     color: rgb(11, 11, 11);
     border-radius:7px ;
     padding: 5px;
     border-color: black;
     
 }
+.cardBox{
+background-color:rgba(255, 255, 255, 0.217);
+border-radius: 20px;
+padding: 5px;
+margin: 5px;
+overflow-x: scroll;
+}
 .icon{
     margin: 5px;
+    font-size: 25px;
 }
 #about{
     max-height: fit-content;
@@ -156,4 +181,46 @@ margin-top: 20px;
 }
 label{
     color: white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.label{
+    color: white;
+    margin-top: 20px;
+}
+.card{
+    width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.428);
+}
+.card:hover{
+    transition: 1s;
+    width: 310px;
+    box-shadow: 5px 5px 5px rgba(248, 245, 245, 0.507);
+}
+.filterBy{
+color: black;
+
+}
+#filterBy{
+    border-style: hidden;
+    border-radius: 5px;
+    padding: 5px;
+    color: rgb(225, 121, 23);
+    font-weight: 600;
+}
+.deletebtn{
+    background-color: rgb(195, 8, 8);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-style: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.282);
+    font-weight: 600;
+}
+.deletebtn:hover{
+    transition: 1s;
+    padding-left: 30px;
+    padding-right: 30px;
 }
